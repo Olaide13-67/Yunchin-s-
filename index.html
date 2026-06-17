@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xi'an Yunchin — Cosmetic Raw Materials</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="nav-logo-mark">Y</div>
+    <div class="nav-logo-text">YUN<span>CHIN</span></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#categories">Categories</a></li>
+    <li><a href="#catalogue">Catalogue</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Request Quote</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Xi'an Yunchin Import & Export Co., Ltd.</p>
+    <h1 class="hero-title">
+      Nature's finest<br>
+      <em>cosmetic ingredients</em><br>
+      for visionary formulators
+    </h1>
+    <p class="hero-sub">
+      From botanical extracts and active peptides to emulsifiers and carrier oils — 318+ premium raw materials sourced and supplied from Xi'an, China to cosmetic manufacturers worldwide.
+    </p>
+    <div class="hero-actions">
+      <a href="#catalogue" class="btn-primary">Browse Catalogue</a>
+      <a href="#contact" class="btn-outline">Request Samples</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-stat-card">
+      <div class="hero-stat-icon">🌿</div>
+      <div>
+        <div class="hero-stat-num">318+</div>
+        <div class="hero-stat-label">Raw Materials Available</div>
+      </div>
+    </div>
+    <div class="hero-stat-card">
+      <div class="hero-stat-icon">🏭</div>
+      <div>
+        <div class="hero-stat-num">900t</div>
+        <div class="hero-stat-label">Annual Production Capacity</div>
+      </div>
+    </div>
+    <div class="hero-stat-card">
+      <div class="hero-stat-icon">🔬</div>
+      <div>
+        <div class="hero-stat-num">HPLC</div>
+        <div class="hero-stat-label">Advanced Quality Detection Systems</div>
+      </div>
+    </div>
+    <div class="hero-stat-card">
+      <div class="hero-stat-icon">✈️</div>
+      <div>
+        <div class="hero-stat-num">Global</div>
+        <div class="hero-stat-label">Export to Worldwide Markets</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item"><span>✓</span> Pharmaceutical Grade</div>
+  <div class="trust-item"><span>✓</span> Cosmetic Grade</div>
+  <div class="trust-item"><span>✓</span> Food Grade</div>
+  <div class="trust-item"><span>✓</span> GC & HPLC Tested</div>
+  <div class="trust-item"><span>✓</span> Dedicated R&D Team</div>
+  <div class="trust-item"><span>✓</span> Custom Formulation Support</div>
+</div>
+
+<!-- CATEGORIES SHOWCASE -->
+<section class="section showcase-section" id="categories">
+  <p class="section-eyebrow fade-in">What we carry</p>
+  <h2 class="section-title fade-in">Ingredient families<br>for every formulation</h2>
+  <p class="section-sub fade-in">Our catalogue spans the full spectrum of cosmetic chemistry — from skin actives and botanical extracts to emulsifiers, peptides, and specialty waxes.</p>
+  <div class="showcase-grid">
+    <div class="showcase-card fade-in">
+      <img src="https://images.unsplash.com/photo-1611241893603-3c359704e0ee?w=600&q=80" alt="Botanical Extracts">
+      <div class="showcase-card-overlay">
+        <div class="showcase-card-tag">Nature-derived</div>
+        <div class="showcase-card-title">Botanical Extracts & Hydrosols</div>
+        <div class="showcase-card-count">30+ extracts · 15+ hydrosols</div>
+      </div>
+    </div>
+    <div class="showcase-card fade-in">
+      <img src="https://images.unsplash.com/photo-1607006344380-b6775a0824a7?w=600&q=80" alt="Skin Actives">
+      <div class="showcase-card-overlay">
+        <div class="showcase-card-tag">Performance</div>
+        <div class="showcase-card-title">Skin Actives & Brighteners</div>
+        <div class="showcase-card-count">Arbutin · Niacinamide · Glutathione · Peptides</div>
+      </div>
+    </div>
+    <div class="showcase-card fade-in">
+      <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=600&q=80" alt="Carrier Oils">
+      <div class="showcase-card-overlay">
+        <div class="showcase-card-tag">Emollient</div>
+        <div class="showcase-card-title">Oils, Butters & Waxes</div>
+        <div class="showcase-card-count">30+ carrier oils · Shea · Cocoa · Mango</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES FILTER CARDS -->
+<section class="section categories-section">
+  <p class="section-eyebrow fade-in">Filter by type</p>
+  <h2 class="section-title fade-in">Browse by category</h2>
+  <div class="categories-grid" id="categoryGrid">
+    <div class="cat-card active" data-cat="all" onclick="filterCat('all', this)">
+      <div class="cat-icon">🌐</div>
+      <div class="cat-name">All Ingredients</div>
+      <div class="cat-count">318 items</div>
+    </div>
+    <div class="cat-card" data-cat="Actives" onclick="filterCat('Actives', this)">
+      <div class="cat-icon">💎</div>
+      <div class="cat-name">Skin Actives</div>
+      <div class="cat-count">Brighteners, AHAs, Peptides</div>
+    </div>
+    <div class="cat-card" data-cat="Oils" onclick="filterCat('Oils', this)">
+      <div class="cat-icon">🫒</div>
+      <div class="cat-name">Oils & Butters</div>
+      <div class="cat-count">Carrier & Essential Oils</div>
+    </div>
+    <div class="cat-card" data-cat="Extracts" onclick="filterCat('Extracts', this)">
+      <div class="cat-icon">🌿</div>
+      <div class="cat-name">Plant Extracts</div>
+      <div class="cat-count">Liquid & Powdered</div>
+    </div>
+    <div class="cat-card" data-cat="Hydrosols" onclick="filterCat('Hydrosols', this)">
+      <div class="cat-icon">💧</div>
+      <div class="cat-name">Hydrosols</div>
+      <div class="cat-count">Floral & Botanical Waters</div>
+    </div>
+    <div class="cat-card" data-cat="Emulsifiers" onclick="filterCat('Emulsifiers', this)">
+      <div class="cat-icon">⚗️</div>
+      <div class="cat-name">Emulsifiers & Thickeners</div>
+      <div class="cat-count">Waxes, Polymers, Gums</div>
+    </div>
+    <div class="cat-card" data-cat="Proteins" onclick="filterCat('Proteins', this)">
+      <div class="cat-icon">🧬</div>
+      <div class="cat-name">Proteins & Peptides</div>
+      <div class="cat-count">Collagen, Silk, Keratin</div>
+    </div>
+    <div class="cat-card" data-cat="Vitamins" onclick="filterCat('Vitamins', this)">
+      <div class="cat-icon">✨</div>
+      <div class="cat-name">Vitamins & Antioxidants</div>
+      <div class="cat-count">Full A–E Range</div>
+    </div>
+    <div class="cat-card" data-cat="Surfactants" onclick="filterCat('Surfactants', this)">
+      <div class="cat-icon">🧴</div>
+      <div class="cat-name">Surfactants & Cleansers</div>
+      <div class="cat-count">SLES, SCI, Glucosides</div>
+    </div>
+    <div class="cat-card" data-cat="Preservatives" onclick="filterCat('Preservatives', this)">
+      <div class="cat-icon">🛡️</div>
+      <div class="cat-name">Preservatives</div>
+      <div class="cat-count">Broad-Spectrum Systems</div>
+    </div>
+    <div class="cat-card" data-cat="Pigments" onclick="filterCat('Pigments', this)">
+      <div class="cat-icon">🎨</div>
+      <div class="cat-name">Pigments & Colorants</div>
+      <div class="cat-count">Iron Oxides, TiO₂</div>
+    </div>
+    <div class="cat-card" data-cat="Waxes" onclick="filterCat('Waxes', this)">
+      <div class="cat-icon">🕯️</div>
+      <div class="cat-name">Waxes</div>
+      <div class="cat-count">Beeswax, Carnauba, Soy</div>
+    </div>
+  </div>
+</section>
+
+<!-- CATALOGUE -->
+<section class="section catalogue-section" id="catalogue">
+  <p class="section-eyebrow fade-in">Full product list</p>
+  <h2 class="section-title fade-in">Ingredient catalogue</h2>
+  <div class="search-bar">
+    <div class="search-input-wrap">
+      <span>🔍</span>
+      <input class="search-input" type="text" placeholder="Search ingredients, e.g. hyaluronic acid, argan oil..." id="searchInput" oninput="handleSearch()">
+    </div>
+  </div>
+  <div class="filter-tags" id="filterTags">
+    <span class="filter-tag active" onclick="setTag('all', this)">All</span>
+    <span class="filter-tag" onclick="setTag('Actives', this)">Actives</span>
+    <span class="filter-tag" onclick="setTag('Oils', this)">Oils & Butters</span>
+    <span class="filter-tag" onclick="setTag('Extracts', this)">Extracts</span>
+    <span class="filter-tag" onclick="setTag('Hydrosols', this)">Hydrosols</span>
+    <span class="filter-tag" onclick="setTag('Emulsifiers', this)">Emulsifiers</span>
+    <span class="filter-tag" onclick="setTag('Proteins', this)">Proteins</span>
+    <span class="filter-tag" onclick="setTag('Vitamins', this)">Vitamins</span>
+    <span class="filter-tag" onclick="setTag('Surfactants', this)">Surfactants</span>
+    <span class="filter-tag" onclick="setTag('Preservatives', this)">Preservatives</span>
+    <span class="filter-tag" onclick="setTag('Pigments', this)">Pigments</span>
+    <span class="filter-tag" onclick="setTag('Waxes', this)">Waxes</span>
+  </div>
+  <p class="catalogue-count" id="catalogueCount">Showing <strong id="countNum">318</strong> ingredients</p>
+  <div class="catalogue-grid" id="catalogueGrid"></div>
+  <div class="load-more-wrap" id="loadMoreWrap">
+    <button class="btn-load" onclick="loadMore()">Load More Ingredients</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about-section" id="about">
+  <div class="about-image-wrap fade-in">
+    <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80" alt="Laboratory">
+    <div class="about-image-overlay">
+      <div class="about-image-stat">900t</div>
+      <div class="about-image-stat-label">Annual plant extract output capacity</div>
+    </div>
+  </div>
+  <div class="about-content fade-in">
+    <p class="section-eyebrow" style="color:var(--gold)">Our story</p>
+    <h2 class="section-title" style="color:var(--white)">Rooted in science,<br>grown in Xi'an</h2>
+    <p class="section-sub" style="color:rgba(255,255,255,0.65); margin-bottom:2.5rem;">
+      Xi'an Yunchin Import & Export Co., Ltd. is headquartered in China's Xi'an National High-tech Industrial Development Zone — the heart of the country's natural extract industry. We specialize in the research, production, and global supply of natural plant extracts and cosmetic raw materials for pharmaceutical, dietary supplement, food, and cosmetic industries.
+    </p>
+    <div class="about-features">
+      <div class="about-feature">
+        <div class="about-feature-icon">🔬</div>
+        <div>
+          <div class="about-feature-title">Advanced R&D Center</div>
+          <div class="about-feature-text">Our technical team operates HPLC, gas chromatography, and magnetic drive autoclave systems, with strong ties to leading scientific research institutions.</div>
+        </div>
+      </div>
+      <div class="about-feature">
+        <div class="about-feature-icon">🏭</div>
+        <div>
+          <div class="about-feature-title">State-of-the-Art Production</div>
+          <div class="about-feature-text">Dynamic countercurrent extraction, membrane separation, microwave drying, and spray drying towers form our production backbone — with 900 tonnes of annual output.</div>
+        </div>
+      </div>
+      <div class="about-feature">
+        <div class="about-feature-icon">🌍</div>
+        <div>
+          <div class="about-feature-title">Global Export Partner</div>
+          <div class="about-feature-text">From indie beauty brands to established cosmetic manufacturers — we tailor our supply to your formulation needs, anywhere in the world.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+  <div class="contact-info fade-in">
+    <p class="section-eyebrow">Get in touch</p>
+    <h2 class="section-title">Start your<br>sourcing journey</h2>
+    <p class="section-sub">Whether you're looking for a single ingredient or building a full formulation portfolio — our team is ready to assist. Samples available on request.</p>
+    <div class="contact-details">
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📧</div>
+        <div>
+          <div class="contact-detail-label">Email</div>
+          <div class="contact-detail-value">yunchin01@foxmail.com</div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📞</div>
+        <div>
+          <div class="contact-detail-label">Phone / WhatsApp</div>
+          <div class="contact-detail-value">+86 13119119825</div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📍</div>
+        <div>
+          <div class="contact-detail-label">Address</div>
+          <div class="contact-detail-value">Tianxing Building, Kangding Road,<br>Xixian New Area, Shaanxi, China</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-form fade-in">
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">First Name</label>
+        <input class="form-input" type="text" placeholder="Jane">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Last Name</label>
+        <input class="form-input" type="text" placeholder="Smith">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Email Address</label>
+      <input class="form-input" type="email" placeholder="jane@yourbrand.com">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Company</label>
+      <input class="form-input" type="text" placeholder="Your Company Name">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Inquiry Type</label>
+      <select class="form-select">
+        <option>Product Availability & Pricing</option>
+        <option>Sample Request</option>
+        <option>Bulk Order</option>
+        <option>Technical Specification</option>
+        <option>Custom Ingredient Request</option>
+        <option>General Inquiry</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Message</label>
+      <textarea class="form-textarea" placeholder="Tell us which ingredients you're interested in and your required quantities..."></textarea>
+    </div>
+    <button class="btn-submit" onclick="submitForm()">Send Inquiry</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-logo">YUN<span>CHIN</span></div>
+    <p class="footer-text" style="margin-top:0.5rem;">Xi'an Yunchin Import and Export Co., Ltd. — Your trusted partner for premium cosmetic raw materials.</p>
+  </div>
+  <div class="footer-links">
+    <a href="#categories">Categories</a>
+    <a href="#catalogue">Catalogue</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <p style="font-size:0.75rem;">© 2026 Xi'an Yunchin Import & Export Co., Ltd.</p>
+</footer>
+
+<div class="toast" id="toast">✓ Inquiry sent! We'll be in touch within 24 hours.</div>
+
+<script src="/script.js"></script>
+</body>
+</html>
